@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./asset/login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.login-container {
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    height: fit-content;
+    margin-bottom: 6px;
+}
+
+.line-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+ .line{
+    width: 100px;
+    height: 4px;
+    background: #e94560;
+    /* margin-bottom: 20px; */
+}
+ 
+
+
+
+.login-container p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #5e72e4;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #0f3460;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login-btn:hover {
+    background-color: rgb(25, 78, 143);
+}
+
+.login-footer {
+    margin-top: 20px;
+}
+
+.login-footer a {
+    color: #5e72e4;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .login-container {
+        padding: 30px;
+        width: 80%;
+    }
+
+    .login-container h2 {
+        font-size: 1.8rem;
+    }
+}
